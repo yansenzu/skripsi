@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ela Admin - HTML5 Admin Template</title>
+    <title>Winnowing</title>
     <meta name="description" content="Ela Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -78,19 +78,27 @@
         <nav class="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="{{route ('home')}}"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
-                    </li>
-                    <li class="active">
-                        <a href="{{route ('categories')}}"><i class="menu-icon fa fa-laptop"></i>Categories </a>
-                    </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Action</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Categories</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="{{route ('judul')}}">Data Judul</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="#">Advanced Form</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route ('categories')}}">Input Categories</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Data Categories</a></li>
                         </ul>
                     </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Abstrak</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route ('home')}}">Input Abstrak</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Data Abstrak</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Judul Skripsi</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route ('judul')}}">Input Judul Skripsi</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Data Judul Skripsi</a></li>
+                        </ul>
+                    </li>      
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>

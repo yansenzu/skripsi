@@ -15,13 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Auth::routes();
-
+//Route Abstrak
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('judul', 'ProsesController@index')->name('judul');
-
-
-// Route Save
 Route::post('/store', 'ProsesController@store')->name('store');
 
 
@@ -30,3 +26,6 @@ Route::get('/categories', 'CategoriesController@index')->name('categories');
 Route::post('/categories', 'CategoriesController@create')->name('inputcategories');
 Route::put('/categories/{id}', 'CategoriesController@update')->name('editcategories');
 Route::delete('/categories/{id}', 'CategoriesController@delete')->name('deletecategories');
+
+//Route judul
+Route::get('/judul', 'JudulController@index')->name('judul');

@@ -19,7 +19,7 @@ class CategoriesController extends Controller
         $categories->save();
         
         if($categories){
-            return redirect ('/');
+            return redirect ('categories');
         }
         else {
             return redirect ('categories');
@@ -34,7 +34,7 @@ class CategoriesController extends Controller
         $categories->save();
 
         if($categories){
-            return redirect('/');
+            return redirect('categories');
         }
         else {
             return redirect ('categories/{id}');
