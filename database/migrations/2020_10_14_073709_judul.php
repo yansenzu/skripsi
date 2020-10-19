@@ -13,7 +13,13 @@ class Judul extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('judul', function(Blueprint $table){
+            $table->id('id_judul');
+            $table->integer('id_categories');
+            $table->longtext('judul');
+            $table->text('fingerprint_judul');
+            $table->timestamps();
+        });
     }
 
     /**

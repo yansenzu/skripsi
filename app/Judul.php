@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Judul extends Model
 {
     protected $table = 'judul';
-    protected $guarded = 'judul';
+    protected $fillable = ['id_categories','judul','fingerprint_judul'];
+    protected $primaryKey = 'id_judul';
 }

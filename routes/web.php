@@ -21,11 +21,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/store', 'ProsesController@store')->name('store');
 
 
+
 //Route categories
 Route::get('/categories', 'CategoriesController@index')->name('categories');
+Route::get('/categories/all','CategoriesController@all')->name('listcategories');
 Route::post('/categories', 'CategoriesController@create')->name('inputcategories');
 Route::put('/categories/{id}', 'CategoriesController@update')->name('editcategories');
 Route::delete('/categories/{id}', 'CategoriesController@delete')->name('deletecategories');
 
 //Route judul
 Route::get('/judul', 'JudulController@index')->name('judul');
+Route::get('/judul/all','JudulController@all')->name('listjudul');
+Route::post('/judul', 'JudulController@inputjudul')->name('inputjudul');
+Route::put('/judul/{id}', 'JudulController@update')->name('editjudul');
+Route::delete('/judul/{id}', 'JudulController@delete')->name('deletejudul');
