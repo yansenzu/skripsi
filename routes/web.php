@@ -26,8 +26,9 @@ Route::post('/store', 'ProsesController@store')->name('store');
 Route::get('/categories', 'CategoriesController@index')->name('categories');
 Route::get('/categories/all','CategoriesController@all')->name('listcategories');
 Route::post('/categories', 'CategoriesController@create')->name('inputcategories');
-Route::put('/categories/{id}', 'CategoriesController@update')->name('editcategories');
-Route::delete('/categories/{id}', 'CategoriesController@delete')->name('deletecategories');
+Route::get('/categories/edit/{id}', 'CategoriesController@edit')->name('editcategories');
+Route::put('/categories/update/{id}', 'CategoriesController@update')->name('editcategories');
+Route::get('/categories/delete/{id}', 'CategoriesController@delete')->name('deletecategories');
 
 //Route judul
 Route::get('/judul', 'JudulController@index')->name('judul');

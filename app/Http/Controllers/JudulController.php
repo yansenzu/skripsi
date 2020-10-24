@@ -12,8 +12,10 @@ class JudulController extends Controller
 {
 
     public function index(){
-        return view('judul');
+        $categories = Categories::all();
+        return view('judul', ['categories' => $categories]);
     }
+
 
     public function inputjudul(Request $request){
         $fingerprint_judul = new Judul;
